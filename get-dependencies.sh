@@ -14,7 +14,9 @@ EOF
 pacman -Syu --noconfirm \
     lib32-libdecor      \
     lib32-libglvnd      \
+    lib32-libpipewire   \
     lib32-mesa          \
+    lib32-pipewire      \
     lib32-pipewire-jack \
     sdl2                \
     yasm
