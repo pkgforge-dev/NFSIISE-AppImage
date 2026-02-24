@@ -7,8 +7,14 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    lib32-glibc \
-    libdecor    \
+    lib32-glibc      \
+    lib32-libgl      \
+    lib32-libx11     \
+    lib32-libxcursor \
+    lib32-libxext    \
+    lib32-libxrender \
+    libdecor         \
+    sdl2             \
     yasm
 
 echo "Installing debloated packages..."
