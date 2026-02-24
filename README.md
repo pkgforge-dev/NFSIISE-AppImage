@@ -17,7 +17,7 @@
 
 </div>
 
-### ⚠️ Copy `fedata` and `gamedata` (need to lowercase them)  to `~/.nfs2se` ⚠️
+### ⚠️ Copy `fedata` and `gamedata` (need to lowercase them and and their contents)  to `~/.nfs2se` ⚠️
 
 ---
 
