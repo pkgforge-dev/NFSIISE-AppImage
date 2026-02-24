@@ -1,0 +1,4 @@
+#!/bin/false
+dir=$HOME/.nfs2se
+mkdir -p "$dir"
+cd "$dir"
