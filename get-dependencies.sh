@@ -13,7 +13,7 @@ Include = /etc/pacman.d/mirrorlist
 EOF
 pacman -Syu --noconfirm \
     lib32-libpulse \
-    libdecor       \
+    lib32-libdecor \
     sdl2           \
     yasm
 
