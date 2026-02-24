@@ -11,9 +11,11 @@ echo "---------------------------------------------------------------"
 #    lib32-libxcursor \
 #    lib32-libxext    \
 #    lib32-libxrender \
-pacman -Syu --noconfirm --chaotic-aur \
+sed -i '/^#\[multilib\]/,/^#Include = \/etc\/pacman\.d\/mirrorlist/ s/^#//' /etc/pacman.conf
+pacman -Syu --noconfirm \
     lib32-glibc      \
     lib32-libpulse \
+    lib32-sdl2 \
     libdecor         \
     sdl2             \
     yasm
@@ -23,7 +25,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-make-aur-package lib32-sdl2
+#make-aur-package 
 make-aur-package nfs2se-git
 
 # If the application needs to be manually built that has to be done down here
