@@ -15,6 +15,7 @@ pacman -Syu --noconfirm \
     lib32-libdecor      \
     lib32-libglvnd      \
     lib32-libpipewire   \
+    lib32-libpulse      \
     lib32-mesa          \
     lib32-pipewire      \
     lib32-pipewire-jack \
