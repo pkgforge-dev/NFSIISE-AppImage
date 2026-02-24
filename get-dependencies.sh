@@ -14,13 +14,13 @@ EOF
 pacman -Syu --noconfirm \
     lib32-libdecor      \
     lib32-libglvnd      \
-    lib32-libpipewire   \
     lib32-libpulse      \
     lib32-mesa          \
-    lib32-pipewire      \
-    lib32-pipewire-jack \
     sdl2                \
     yasm
+    #    lib32-libpipewire   \
+    #    lib32-pipewire      \
+#    lib32-pipewire-jack \
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
