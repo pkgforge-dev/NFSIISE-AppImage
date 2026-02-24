@@ -11,7 +11,7 @@ echo "---------------------------------------------------------------"
 #    lib32-libxcursor \
 #    lib32-libxext    \
 #    lib32-libxrender \
-pacman -Syu --noconfirm \
+pacman -Syu --noconfirm --chaotic-aur \
     lib32-glibc      \
     lib32-libpulse \
     libdecor         \
