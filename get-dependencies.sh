@@ -11,7 +11,7 @@ echo "---------------------------------------------------------------"
 #    lib32-libxcursor \
 #    lib32-libxext    \
 #    lib32-libxrender \
-cat <EOF >> /etc/pacman.conf
+tee -a /etc/pacman.conf <<EOF
 
 [multilib]
 Include = /etc/pacman.d/mirrorlist
