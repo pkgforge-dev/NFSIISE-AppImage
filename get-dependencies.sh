@@ -25,11 +25,7 @@ get-debloated-pkgs --add-common --prefer-nano
 make-aur-package nfs2se-git
 
 # If the application needs to be manually built that has to be done down here
-
-# if you also have to make nightly releases check for DEVEL_RELEASE = 1
-#
-# if [ "${DEVEL_RELEASE-}" = 1 ]; then
-# 	nightly build steps
-# else
-# 	regular build steps
-# fi
+mkdir -p ./AppDir/bin
+mv -v /opt/nfs2se/text.* ./AppDir/bin
+mv -v /opt/nfs2se/nfs2se.conf.template ./AppDir/bin/nfs2se.conf
+mv -v /opt/nfs2se/install.win ./AppDir/bin
