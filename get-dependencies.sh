@@ -6,13 +6,14 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
+#    lib32-libgl      \
+#    lib32-libx11     \
+#    lib32-libxcursor \
+#    lib32-libxext    \
+#    lib32-libxrender \
 pacman -Syu --noconfirm \
     lib32-glibc      \
-    lib32-libgl      \
-    lib32-libx11     \
-    lib32-libxcursor \
-    lib32-libxext    \
-    lib32-libxrender \
+    lib32-libglvnd \
     libdecor         \
     sdl2             \
     yasm
