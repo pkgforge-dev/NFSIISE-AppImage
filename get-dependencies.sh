@@ -6,8 +6,6 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-#    lib32-glibc    \
-#    lib32-sdl2     \
 tee -a /etc/pacman.conf <<EOF
 
 [multilib]
