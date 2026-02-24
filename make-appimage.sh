@@ -13,7 +13,7 @@ export DESKTOP=/usr/share/applications/nfs2se.desktop
 export OPENGL=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/nfs2se /opt/nfs2se
+quick-sharun /usr/bin/nfs2se #/opt/nfs2se
 
 # Additional changes can be done in between here
 
