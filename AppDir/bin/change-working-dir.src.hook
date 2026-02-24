@@ -1,4 +1,9 @@
 #!/bin/false
 dir=$HOME/.nfs2se
 mkdir -p "$dir"
+if [ ! -f "$dir"/nfs2se.conf ]; then
+  cp "$APPDIR"/bin/nfs2se.conf "$dir"
+  cp "$APPDIR"/bin/install.win "$dir"
+  cp "$APPDIR"/bin/text.* "$dir"
+fi
 cd "$dir"
