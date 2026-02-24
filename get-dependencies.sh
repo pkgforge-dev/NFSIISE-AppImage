@@ -11,7 +11,11 @@ echo "---------------------------------------------------------------"
 #    lib32-libxcursor \
 #    lib32-libxext    \
 #    lib32-libxrender \
-sed -i '/^#\[multilib\]/,/^#Include = \/etc\/pacman\.d\/mirrorlist/ s/^#//' /etc/pacman.conf
+cat <EOF >> /etc/pacman.conf
+
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+EOF
 pacman -Syu --noconfirm \
     lib32-glibc      \
     lib32-libpulse \
