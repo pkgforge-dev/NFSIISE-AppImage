@@ -6,11 +6,9 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-#sed -i '/\[multilib\]/,/Include/s/^[ ]*#//' /etc/pacman.conf
 pacman -Syu --noconfirm \
-    lib32-mesa \
-    lib32-sdl2 \
-    libdecor   \
+    lib32-glibc \
+    libdecor    \
     yasm
 
 echo "Installing debloated packages..."
@@ -18,6 +16,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
+make-aur-package lib32-sdl2
 make-aur-package nfs2se-git
 
 # If the application needs to be manually built that has to be done down here
