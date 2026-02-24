@@ -11,7 +11,7 @@ rim-update
 pacman -Syu --noconfirm \
     lib32-mesa \
     lib32-sdl2 \
-    libdecor
+    libdecor   \
     yasm
 
 echo "Installing debloated packages..."
