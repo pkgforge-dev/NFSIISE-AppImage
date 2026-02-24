@@ -13,7 +13,7 @@ echo "---------------------------------------------------------------"
 #    lib32-libxrender \
 pacman -Syu --noconfirm \
     lib32-glibc      \
-    lib32-libglvnd \
+    lib32-libpulse \
     libdecor         \
     sdl2             \
     yasm
