@@ -11,10 +11,11 @@ tee -a /etc/pacman.conf <<EOF
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 EOF
-pacman -Syu --noconfirm \
-    lib32-libpulse \
-    lib32-libdecor \
-    sdl2           \
+pacman -Syu --noconfirm    \
+    lib32-libdecor         \
+    lib32-libpipewire-jack \
+    lib32-mesa             \
+    sdl2                   \
     yasm
 
 echo "Installing debloated packages..."
