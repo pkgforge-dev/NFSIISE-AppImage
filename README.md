@@ -2,9 +2,9 @@
 
 # NFSIISE-AppImage 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/Link4Electronics/NFSIISE-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/Link4Electronics/NFSIISE-AppImage/releases/latest)
-[![CI Build Status](https://github.com//Link4Electronics/NFSIISE-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/Link4Electronics/NFSIISE-AppImage/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/Link4Electronics/NFSIISE-AppImage)](https://github.com/Link4Electronics/NFSIISE-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/NFSIISE-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/NFSIISE-AppImage/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/NFSIISE-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/NFSIISE-AppImage/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/NFSIISE-AppImage)](https://github.com/pkgforge-dev/NFSIISE-AppImage/releases/latest)
 
 <p align="center">
   <img src="https://github.com/zaps166/NFSIISE/blob/master/src/Windows/nfs2se.ico?raw" width="128" />
@@ -13,7 +13,7 @@
 
 | Latest Nightly Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/Link4Electronics/NFSIISE-AppImage/releases/latest) | [Click here](https://github.com/zaps166/NFSIISE) |
+| [Click here](https://github.com/pkgforge-dev/NFSIISE-AppImage/releases/latest) | [Click here](https://github.com/zaps166/NFSIISE) |
 
 </div>
 
