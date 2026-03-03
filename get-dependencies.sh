@@ -15,6 +15,7 @@ pacman -Syu --noconfirm \
     lib32-libdecor \
     lib32-libglvnd \
     lib32-libpulse \
+    lib32-libusb   \
     lib32-mesa     \
     sdl2           \
     yasm
