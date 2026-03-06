@@ -17,6 +17,8 @@ pacman -Syu --noconfirm \
     lib32-libpulse \
     lib32-libusb   \
     lib32-mesa     \
+    lib32-pipewire-jack \
+    lib32-pipewire \
     sdl2           \
     yasm
 
