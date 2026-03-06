@@ -12,7 +12,7 @@ export ICON=/usr/share/icons/hicolor/32x32/apps/nfs2se.png
 export DESKTOP=/usr/share/applications/nfs2se.desktop
 export STARTUPWMCLASS=ld-linux.so.2
 export DEPLOY_OPENGL=1
-#export DEPLOY_PIPEWIRE=1
+export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
 quick-sharun /opt/nfs2se /usr/lib32/libEGL.so* /usr/lib32/libEGL_mesa.so* /usr/lib32/libudev.so* /usr/lib32/libusb-1.0.so*
