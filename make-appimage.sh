@@ -13,9 +13,10 @@ export DESKTOP=/usr/share/applications/nfs2se.desktop
 export STARTUPWMCLASS=ld-linux.so.2
 export DEPLOY_OPENGL=1
 export DEPLOY_PIPEWIRE=1
+export LIB_DIR=/usr/lib32
 
 # Deploy dependencies
-quick-sharun /opt/nfs2se /usr/lib32/libEGL*.so* /usr/lib32/libGLX*.so* /usr/lib32/libudev.so* /usr/lib32/libusb-1.0.so*
+quick-sharun /opt/nfs2se
 
 # Additional changes can be done in between here
 
