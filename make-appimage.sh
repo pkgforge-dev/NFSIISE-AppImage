@@ -15,7 +15,7 @@ export DEPLOY_OPENGL=1
 export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
-quick-sharun /opt/nfs2se /usr/lib32/libEGL.so* /usr/lib32/libEGL_mesa.so* /usr/lib32/libudev.so* /usr/lib32/libusb-1.0.so*
+quick-sharun /opt/nfs2se /usr/lib32/libEGL*.so* /usr/lib32/libGLX*.so* /usr/lib32/libudev.so* /usr/lib32/libusb-1.0.so*
 
 # Additional changes can be done in between here
 
