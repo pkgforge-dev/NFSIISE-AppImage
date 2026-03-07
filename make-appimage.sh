@@ -16,7 +16,7 @@ export DEPLOY_PIPEWIRE=1
 export LIB_DIR=/usr/lib32
 
 # Deploy dependencies
-quick-sharun /opt/nfs2se
+quick-sharun /opt/nfs2se/nfs2se
 
 # Additional changes can be done in between here
 
