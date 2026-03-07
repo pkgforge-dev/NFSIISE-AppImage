@@ -3,21 +3,19 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q nfs2se-git | awk '{print $2; exit}') # example command to get version of application here
-export ARCH VERSION
+export ARCH
 export OUTPATH=./dist
-export ADD_HOOKS="self-updater.bg.hook"
+export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/icons/hicolor/32x32/apps/nfs2se.png
-export DESKTOP=/usr/share/applications/nfs2se.desktop
-export STARTUPWMCLASS=ld-linux.so.2
+export ICON=https://raw.githubusercontent.com/Link4Electronics/NFSIISE/refs/heads/master/Need%20For%20Speed%20II%20SE/nfs2se.png
+export DESKTOP=https://raw.githubusercontent.com/Link4Electronics/NFSIISE/refs/heads/master/Need%20For%20Speed%20II%20SE/nfs2se.desktop
+export STARTUPWMCLASS=nfs2se
 export DEPLOY_OPENGL=1
-export DEPLOY_PIPEWIRE=1
+export DEPLOY_PULSE=1
 
 # Deploy dependencies
-quick-sharun /opt/nfs2se /usr/lib32/libEGL.so* /usr/lib32/libEGL_mesa.so* /usr/lib32/libudev.so* /usr/lib32/libusb-1.0.so*
-
-# Additional changes can be done in between here
+quick-sharun ./AppDir/bin/nfs2se
+echo 'ANYLINUX_DO_NOT_LOAD_LIBS=libpipewire-0.3.so*:${ANYLINUX_DO_NOT_LOAD_LIBS}' >> ./AppDir/.env
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
