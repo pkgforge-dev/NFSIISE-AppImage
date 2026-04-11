@@ -1,4 +1,4 @@
-#!/bin/false
+#!/bin/sh
 dir=$HOME/.nfs2se
 mkdir -p "$dir"
 if [ ! -f "$dir"/nfs2se.conf ]; then
