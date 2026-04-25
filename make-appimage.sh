@@ -12,13 +12,14 @@ export ICON=/usr/share/icons/hicolor/32x32/apps/nfs2se.png
 export DESKTOP=/usr/share/applications/nfs2se.desktop
 export STARTUPWMCLASS=ld-linux.so.2
 export DEPLOY_OPENGL=1
-export DEPLOY_PIPEWIRE=1
+export DEPLOY_PULSE=1
 export LIB_DIR=/usr/lib32
 
 # Deploy dependencies
 quick-sharun /opt/nfs2se/nfs2se
 
 # Additional changes can be done in between here
+echo 'ANYLINUX_DO_NOT_LOAD_LIBS=libpipewire-*.so*:${ANYLINUX_DO_NOT_LOAD_LIBS}' >> ./AppDir/.env
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
