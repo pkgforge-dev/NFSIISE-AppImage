@@ -12,12 +12,12 @@ tee -a /etc/pacman.conf <<EOF
 Include = /etc/pacman.d/mirrorlist
 EOF
 pacman -Syu --noconfirm \
-    lib32-libdecor      \
-    lib32-libglvnd      \
-    lib32-libpulse      \
-    lib32-libusb        \
-    lib32-mesa          \
-    sdl2                \
+    lib32-libdecor \
+    lib32-libglvnd \
+    lib32-libpulse \
+    lib32-libusb   \
+    lib32-mesa     \
+    sdl2           \
     yasm
 
 echo "Installing debloated packages..."
