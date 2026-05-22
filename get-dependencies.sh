@@ -33,7 +33,7 @@ cd ./NFSIISE
 if [ "$ARCH" = "x86_64" ]; then
     ./compile_nfs x64
 else
-    ./compile_nfs cpp
+    ./compile_nfs arm64
 fi
 mv -v "./Need For Speed II SE/text.*" ../AppDir/bin
 mv -v "./Need For Speed II SE/nfs2se.conf.template" ../AppDir/bin/nfs2se.conf
