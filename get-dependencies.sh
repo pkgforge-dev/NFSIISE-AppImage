@@ -21,9 +21,15 @@ get-debloated-pkgs --add-common --prefer-nano
 #make-aur-package nfs2se-git
 
 # If the application needs to be manually built that has to be done down here
-git clone --recursive --depth 1 https://github.com/Link4Electronics/NFSIISE
+echo "Making nightly build of NFSIISE..."
+echo "---------------------------------------------------------------"
+REPO="https://github.com/Link4Electronics/NFSIISE"
+VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
+git clone --recursive --depth 1 "$REPO" ./NFSIISE
+echo "$VERSION" > ~/version
+
 mkdir -p ./AppDir/bin
-cd NFSIISE
+cd ./NFSIISE
 if [ "$ARCH" = "x86_64" ]; then
     ./compile_nfs x64
 else
