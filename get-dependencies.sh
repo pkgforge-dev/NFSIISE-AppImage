@@ -33,3 +33,4 @@ mv -v "./Need For Speed II SE/text.*" ../AppDir/bin
 mv -v "./Need For Speed II SE/nfs2se.conf.template" ../AppDir/bin/nfs2se.conf
 mv -v "./Need For Speed II SE/install.win" ../AppDir/bin
 mv -v "./Need For Speed II SE/nfs2se.png" ../AppDir
+mv -v "./Need For Speed II SE/nfs2se.desktop" ../AppDir
