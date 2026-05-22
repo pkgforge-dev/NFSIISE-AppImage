@@ -13,7 +13,7 @@
 
 | Latest Nightly Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/NFSIISE-AppImage/releases/latest) | [Click here](https://github.com/zaps166/NFSIISE) |
+| [Click here](https://github.com/pkgforge-dev/NFSIISE-AppImage/releases/latest) | [Click here](https://github.com/Link4Electronics/NFSIISE) |
 
 </div>
 
