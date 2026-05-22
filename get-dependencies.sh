@@ -36,6 +36,7 @@ else
 fi
 cd "Need For Speed II SE"
 mv -v text.* ../../AppDir/bin
+mv -v nfs2se ../../AppDir/bin
 mv -v nfs2se.conf.template ../../AppDir/bin/nfs2se.conf
 mv -v install.win ../../AppDir/bin
 mv -v nfs2se.png ../../AppDir
