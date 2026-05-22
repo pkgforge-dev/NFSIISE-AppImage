@@ -29,6 +29,7 @@ if [ "$ARCH" = "x86_64" ]; then
 else
     ./compile_nfs cpp
 fi
-mv -v /opt/nfs2se/text.* ./AppDir/bin
-mv -v /opt/nfs2se/nfs2se.conf.template ./AppDir/bin/nfs2se.conf
-mv -v /opt/nfs2se/install.win ./AppDir/bin
+mv -v "./Need For Speed II SE/text.*" ../AppDir/bin
+mv -v "./Need For Speed II SE/nfs2se.conf.template" ../AppDir/bin/nfs2se.conf
+mv -v "./Need For Speed II SE/install.win" ../AppDir/bin
+mv -v "./Need For Speed II SE/nfs2se.png" ../AppDir
