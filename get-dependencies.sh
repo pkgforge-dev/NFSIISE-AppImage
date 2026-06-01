@@ -8,9 +8,10 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     clang    \
+    cmake    \
     libdecor \
     lld      \
-    sdl2     \
+    sdl3     \
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -29,11 +30,10 @@ echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cd ./NFSIISE
-if [ "$ARCH" = "x86_64" ]; then
-    ./compile_nfs x64
-else
-    ./compile_nfs arm64
-fi
+mkdir -p build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make -j$(nproc)
+cd ..
 cd "Need For Speed II SE"
 mv -v text.* ../../AppDir/bin
 mv -v nfs2se ../../AppDir/bin
