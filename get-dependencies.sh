@@ -33,8 +33,7 @@ cd ./NFSIISE
 mkdir -p build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j$(nproc)
-cd ..
-cd "Need For Speed II SE"
+cd "../Need For Speed II SE"
 mv -v text.* ../../AppDir/bin
 mv -v nfs2se ../../AppDir/bin
 mv -v nfs2se.conf.template ../../AppDir/bin/nfs2se.conf
