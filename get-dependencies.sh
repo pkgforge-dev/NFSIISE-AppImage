@@ -11,9 +11,9 @@ pacman -Syu --noconfirm \
     cmake          \
     libdecor       \
     lld            \
+    pipewire-audio \
+    pipewire-jack  \
     sdl3
-#    pipewire-audio \
-#    pipewire-jack  \
 
 
 echo "Installing debloated packages..."
