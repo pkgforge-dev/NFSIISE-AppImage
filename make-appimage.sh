@@ -17,7 +17,7 @@ quick-sharun ./AppDir/bin/nfs2se
 
 # Additional changes can be done in between here
 echo 'ANYLINUX_DO_NOT_LOAD_LIBS=libpipewire-0.3.so*:${ANYLINUX_DO_NOT_LOAD_LIBS}' >> ./AppDir/.env
-echo 'LC_ALL=C.UTF-8' >> ./AppDir/.env
+#echo 'LC_ALL=C.UTF-8' >> ./AppDir/.env
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
