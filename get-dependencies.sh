@@ -11,8 +11,6 @@ pacman -Syu --noconfirm \
     cmake          \
     libdecor       \
     lld            \
-    pipewire-audio \
-    pipewire-jack  \
     sdl3
 
 
