@@ -18,7 +18,7 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-echo "Making nightly build of NFSIISE..."
+echo "Building NFSIISE..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/Link4Electronics/NFSIISE"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
