@@ -12,7 +12,6 @@ pacman -Syu --noconfirm \
     lld   \
     sdl3
 
-
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano libdecor-mini
