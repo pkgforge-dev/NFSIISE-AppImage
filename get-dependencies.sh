@@ -29,9 +29,6 @@ mkdir -p build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j$(nproc)
 cd "../Need For Speed II SE"
-mv -v text.* ../../AppDir/bin
-mv -v nfs2se ../../AppDir/bin
+mv -v text.* nfs2se install.win ../../AppDir/bin
 mv -v nfs2se.conf.template ../../AppDir/bin/nfs2se.conf
-mv -v install.win ../../AppDir/bin
-mv -v nfs2se.png ../../AppDir
-mv -v nfs2se.desktop ../../AppDir
+mv -v nfs2se.png nfs2se.desktop ../../AppDir
