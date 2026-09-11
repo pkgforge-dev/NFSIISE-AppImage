@@ -6,11 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-    clang \
-    cmake \
-    lld   \
-    sdl3
+pacman -Syu --noconfirm clang cmake lld sdl3
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -24,11 +20,9 @@ git clone --recursive --depth 1 "$REPO" ./NFSIISE
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
-cd ./NFSIISE
-mkdir -p build && cd build
-cmake -DCMAKE_BUILD_TYPE=Release ..
-make -j$(nproc)
-cd "../Need For Speed II SE"
-mv -v text.* nfs2se install.win ../../AppDir/bin
-mv -v nfs2se.conf.template ../../AppDir/bin/nfs2se.conf
-mv -v nfs2se.png nfs2se.desktop ../../AppDir
+cmake -S ./NFSIISE -B build -DCMAKE_BUILD_TYPE=Release ..
+cmake --build build -j$(nproc)
+cd "../"
+mv -v "Need For Speed II SE/text.*" "Need For Speed II SE/nfs2se" "Need For Speed II SE/install.win" ./AppDir/bin
+mv -v "Need For Speed II SE/nfs2se.conf.template" ./AppDir/bin/nfs2se.conf
+mv -v "Need For Speed II SE/nfs2se.png" "Need For Speed II SE/nfs2se.desktop" ./AppDir
