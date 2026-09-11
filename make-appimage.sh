@@ -7,6 +7,8 @@ export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
+export ICON=https://raw.githubusercontent.com/Link4Electronics/NFSIISE/refs/heads/master/Need%20For%20Speed%20II%20SE/nfs2se.png
+export DESKTOP=https://raw.githubusercontent.com/Link4Electronics/NFSIISE/refs/heads/master/Need%20For%20Speed%20II%20SE/nfs2se.desktop
 export STARTUPWMCLASS=nfs2se
 export DEPLOY_OPENGL=1
 export DEPLOY_PULSE=1
