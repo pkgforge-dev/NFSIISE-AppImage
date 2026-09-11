@@ -22,5 +22,6 @@ echo "$VERSION" > ~/version
 mkdir -p ./AppDir/bin
 cmake -S ./NFSIISE -B build -DCMAKE_BUILD_TYPE=Release ..
 cmake --build build -j$(nproc)
-mv -v "NFSIISE/Need For Speed II SE/text.*" "NFSIISE/Need For Speed II SE/nfs2se" "NFSIISE/Need For Speed II SE/install.win" ./AppDir/bin
-mv -v "NFSIISE/Need For Speed II SE/nfs2se.conf.template" ./AppDir/bin/nfs2se.conf
+cd "./NFSIISE/Need For Speed II SE"
+mv -v text.* nfs2s install.win ../../AppDir/bin
+mv -v nfs2se.conf.template ../../AppDir/bin/nfs2se.conf
