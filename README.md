@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/NFSIISE-AppImage)](https://github.com/pkgforge-dev/NFSIISE-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/zaps166/NFSIISE/blob/master/src/Windows/nfs2se.ico?raw" width="128" />
+  <img src="https://github.com/Link4Electronics/NFSIISE/blob/master/src/Windows/nfs2se.ico?raw" width="128" />
 </p>
 
 
